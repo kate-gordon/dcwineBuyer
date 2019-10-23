@@ -9,7 +9,9 @@ router.get('/', async function(req, res, next) {
   res.render('template', { 
     locals: {
       title:"",
-      data: buyerData 
+      data: buyerData,
+      isLoggedIn: req.session.is_logged_in,
+      userName: req.session.first_name
     },
     partials: {
       partial: "partial-index"
@@ -25,7 +27,9 @@ router.get('/:buyer_id', async function(req, res, next) {
   res.render("template", {
     locals: { 
       title: "This is one buyer",
-      buyerData: theBuyer 
+      buyerData: theBuyer,
+      isLoggedIn: req.session.is_logged_in,
+      userName: req.session.first_name
     },
     partials: {
       partial: "partial-single-buyer"
