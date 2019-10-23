@@ -1,0 +1,11 @@
+<h2>Buyers</h2> 
+<section class="section">
+   <ul class="level">
+        ${data.map(buyers => `
+            <li style="width: 100%"> 
+                <a href="./${buyers.id}">${buyers.name}</a>
+            </li>
+            `).join('')}   
+    </ul> 
+</section>
+
