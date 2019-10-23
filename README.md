@@ -1,4 +1,4 @@
-# Learning Express, Node.js, & PostgreSQL 
+# Learning Express, Node.js, & PostgreSQL at DigitalCrafts 
 
 - Setting up MVC 
 - Pulling from database 
